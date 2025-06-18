@@ -1,0 +1,43 @@
+---
+title: "Homework 1- R"
+author: "GurtejSingh 24216077"
+format: pdf
+editor: visual
+execute:
+  echo: false
+---
+
+## **Introduction**
+
+The iris dataset is a classic example used in both statistics and machine learning. It contains measurements of sepal and petal sizes for 150 iris flowers, divided evenly across three species: setosa, versicolor, and virginica.
+
+## **Dataset Overview**
+
+```{r}
+str(iris)
+```
+
+This dataset comes built into R and includes five variables:
+
+-   Sepal.Length
+-   Sepal.Width
+-   Petal.Length
+-   Petal.Width
+-   Species
+
+There are 150 observations in total, with 50 flowers from each of the three species.
+
+## **Plot: Petal Dimensions by Species**
+
+```{r}
+library(ggplot2)
+
+ggplot(iris, aes(x = Petal.Length, y = Petal.Width, color = Species)) +
+  geom_point(size = 2) + 
+labs(title = "Petal Length vs Width by Species", 
+    x = "Petal Length (cm)", y = "Petal Width (cm)") + theme_minimal()
+```
+
+## **Conclusion**
+
+The scatter plot shows clear differences between the three iris species based on their petal size. Setosa flowers have the smallest petals, Virginica the largest, and Versicolor sits in the middle, with some overlap. This pattern suggests that petal length and width are useful traits for telling the species apart, both visually and in predictive models.
