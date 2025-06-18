@@ -27,6 +27,24 @@ This dataset comes built into R and includes five variables:
 
 There are 150 observations in total, with 50 flowers from each of the three species.
 
+## Update
+
+```{r}
+summary(iris)
+```
+
+## **Observations**
+
+-   Sepal.Length ranges from 4.3 to 7.9, with a mean of 5.84.
+
+-   Sepal.Width ranges from 2.0 to 4.4, with a mean of 3.06.
+
+-   Petal.Length ranges from 1.0 to 6.9, with a mean of 3.76.
+
+-   Petal.Width ranges from 0.1 to 2.5, with a mean of 1.20.
+
+-   Species has 3 categories: setosa, versicolor, and virginica, each with 50 observations.
+
 ## **Plot: Petal Dimensions by Species**
 
 ```{r}
